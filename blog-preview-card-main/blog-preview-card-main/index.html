@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet  -->
+  <style>
+      /* RESET */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* BODY */
+  body {
+    font-family: 'Figtree', sans-serif;
+    background-color: #f4d04e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* CARD */
+  .blog-preview-card {
+    background-color: #fff;
+    width: 350px;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #000;
+
+    /* THIS IS IMPORTANT (shadow style from design) */
+    box-shadow: 8px 8px 0 #000;
+  }
+
+  /* IMAGE */
+  .blog-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  /* CATEGORY BUTTON */
+  .blog-content::before {
+    content: "Learning";
+    display: inline-block;
+    background-color: #f4d04e;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  /* DATE */
+  .blog-content p:first-of-type {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  /* TITLE */
+  .blog-content h1 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .blog-content h1:hover {
+    color: #f4d04e;
+  }
+
+  /* DESCRIPTION */
+  .blog-content p:nth-of-type(2) {
+    font-size: 14px;
+    color: #6b6b6b;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  /* AUTHOR */
+  .blog-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .blog-author img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .author-info p {
+    font-size: 14px;
+    font-weight: 800;
+  }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="blog-preview-card">
+        <div class="blog-image">
+          <img src="/Activities/Blog preview card/blog-preview-card-main/blog-preview-card-main/assets/images/illustration-article.svg" alt="blog image">
+        </div>
+        
+        <div class="blog-content">
+            <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+            <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+            <div class="blog-author">
+                <img src="/Activities/Blog preview card/blog-preview-card-main/blog-preview-card-main/assets/images/image-avatar.webp" alt="author image">
+                  <div class="author-info">
+                    <p>Michelle Appleton</p>
+                    <p>28 Jun 2020</p>
+                  </div>
+            </div>
+          </div>
+    </section>
+  </main> 
+
+</body>
+</html>
